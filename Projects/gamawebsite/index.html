@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Navbar</title>
+</head>
+
+<body>
+    <nav>
+        <img src="/images/gama.png" class="logo" alt="">
+        <label for="checkbox" class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </label>
+        <input type="checkbox" class="checkbox" id="checkbox" class="checkbox">
+        <div class="ul">
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Gaming</a></li>
+                <li><a href="#">Merchandise</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+<script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+</script>
+
+</html>

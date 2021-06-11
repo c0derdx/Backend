@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    display: block;
+    width: 600px;
+    margin: auto;
+    background-color: aqua;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+input {
+    display: block;
+    background-color: rgb(207, 252, 181);
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+button {
+    border: 0;
+    padding: 0;
+    outline: none;
+    background-color: rgb(255, 154, 238);
+    padding: 5px 30px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}

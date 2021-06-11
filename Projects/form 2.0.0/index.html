@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Save Web Form Data to Spreadsheets</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+		<script src="app.js"></script>
+		
+</head>
+<body>
+	<div class="registration-block">
+		<form name="registration" class="registration" id="registration">
+			<h1>Registration Form</h1>
+			<div class="form">
+				<input type="text" class="name" autocomplete="off" name="name" required />
+				<label class="label-name" for="name">
+					<span class="content-name">Full Name</span>
+				</label>
+			</div>
+		<div class="form">
+		<input type="text" class="name" autocomplete="off" name="age" required />
+			<label class="label-name" for="name">
+				<span class="content-name">Age</span>
+			</label>
+		</div>
+		<div class="form">
+			<input type="text" class="name" autocomplete="off" name="gender" required />
+			<label class="label-name" for="name">
+				<span class="content-name">Gender</span>
+			</label>
+	    </div>
+		<div class="form">
+		<input type="text" class="name" autocomplete="off" name="contact_no" required />
+			<label class="label-name" for="name">
+				<span class="content-name">Contact No.</span>
+			</label>	
+		</div>
+		<div class="form">
+			<input type="text" class="name" autocomplete="off" name="email" required />
+			<label class="label-name" for="name">
+				<span class="content-name">Email</span>
+			</label>
+	    </div>
+		<button class="submit-btn" onclick='SubForm()'>Submit</button>
+
+	</form>
+	</div>
+</body>
+</html>

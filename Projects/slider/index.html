@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+</head>
+<body>
+    <input id="getImage" type="text" value="">
+    <input type="button" value="submit" onclick="insertImage()">
+    <div class="container">
+        <div class="slider">
+            <div class="slides"><svg class="cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg><img id="slideImage0" src="https://isa-1.mxplay.com/pic/5798ed15dc55fa74faa8c950aaee7c48/en/16x9/984x555/test_pic1591613817664.webp" alt=""></div>
+            <div class="slides"><svg class="cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg><img id="slideImage1" src="https://isa-1.mxplay.com/pic/5798ed15dc55fa74faa8c950aaee7c48/en/16x9/984x555/test_pic1591613817664.webp" alt=""></div>
+            <div class="slides"><svg class="cart"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg><img id="slideImage2" src="https://isa-1.mxplay.com/pic/5798ed15dc55fa74faa8c950aaee7c48/en/16x9/984x555/test_pic1591613817664.webp" alt=""></div>
+            <div class="slides"><svg class="cart"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg><img id="slideImage3" src="https://isa-1.mxplay.com/pic/5798ed15dc55fa74faa8c950aaee7c48/en/16x9/984x555/test_pic1591613817664.webp" alt=""></div>
+            <div class="slides"><svg class="cart"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg><img id="slideImage4" src="https://isa-1.mxplay.com/pic/5798ed15dc55fa74faa8c950aaee7c48/en/16x9/984x555/test_pic1591613817664.webp" alt=""></div>
+            <div class="slides"><svg class="cart"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg><img id="slideImage5" src="https://isa-1.mxplay.com/pic/5798ed15dc55fa74faa8c950aaee7c48/en/16x9/984x555/test_pic1591613817664.webp" alt=""></div>
+            <div class="slides"><svg class="cart"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg><img id="slideImage6" src="https://isa-1.mxplay.com/pic/5798ed15dc55fa74faa8c950aaee7c48/en/16x9/984x555/test_pic1591613817664.webp" alt=""></div>
+            <div class="slides"><svg class="cart"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg><img id="slideImage7" src="https://isa-1.mxplay.com/pic/5798ed15dc55fa74faa8c950aaee7c48/en/16x9/984x555/test_pic1591613817664.webp" alt=""></div>
+            <div class="slides"><svg class="cart"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg><img id="slideImage8" src="https://isa-1.mxplay.com/pic/5798ed15dc55fa74faa8c950aaee7c48/en/16x9/984x555/test_pic1591613817664.webp" alt=""></div>
+            <div class="slides"><svg class="cart"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 3l-.743 2h-1.929l-3.474 12h-13.239l-4.615-11h16.812l-.564 2h-13.24l2.937 7h10.428l3.432-12h4.195zm-15.5 15c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm6.9-7-1.9 7c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"/></svg><img id="slideImage9" src="https://isa-1.mxplay.com/pic/5798ed15dc55fa74faa8c950aaee7c48/en/16x9/984x555/test_pic1591613817664.webp" alt=""></div> 
+        </div>
+    </div>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+
+        body {
+            overflow-x: hidden;
+        }
+
+
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100px;
+        }
+
+
+        .slider {
+            display: grid;
+            position: absolute;
+            grid-template-rows: 100px;
+            grid-template-columns: repeat(10 , 2fr);
+            grid-column-gap: 10px;
+        }
+
+
+        .slides {
+            width: 400px;
+            height: 200px;
+            background-color: red;
+            background-position: center;
+            white-space: nowrap;
+            position: relative;
+        }
+
+
+        .cart {
+            position: absolute;
+            right: 0;
+            top: 2%;
+        }
+
+
+        .slides img {
+            width: 400px;
+            height: 200px;
+            object-fit: cover;
+        }
+</style>
+<script>
+    let i = 0;
+    insertImage = () => {
+        let id ='slideImage' +i;
+        console.log(id);
+        let imageAddress = document.getElementById('getImage').value;
+        console.log(imageAddress);
+        let slideImage = document.getElementById(id);
+        slideImage.src = imageAddress;
+        console.log(slideImage);
+        console.log(imageAddress);
+        i++;
+        
+    
+    }
+    
+</script>
+    </body>
+</html>

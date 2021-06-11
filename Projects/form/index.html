@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Save Web Form Data to Spreadsheets</title>
+	<link rel="stylesheet" href="/style.css">
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/5806/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					// alert("Form Data Submitted :)")
+					// $('#custom-tag').html('YourHtmlString');
+					document.myForm.reset();
+					location.href = "http://google.nl";
+				},
+				error: function(){
+					// alert("There was an error :(")
+					location.href = "http://google.nl";
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+	<!-- <div id="custom-tag">lol</div> -->
+	<div class="registration-block"> 
+	<div class="registration">
+	<form id="myForm" name="myForm">
+		<div class="form">
+		<label for="full_name">Name</label>
+		<input class="full_name" name="full_name"  placeholder="Please Enter your full name" id="full_name"/>
+		</div>
+		<label>id</label>
+		<input name="id" />
+		<label>rs</label>
+		<input name="rs" />
+		<label>email</label>
+		<input name="email" />
+		<label>age</label>
+		<input name="age" />
+		<label>message</label>
+		<input name="message" />
+		<input type="file" id="myFile" name="filename">
+	</form>
+</div>
+	<button class="submit-btn" onclick='SubForm()'>Submit</button>
+
+</div>	
+</body>
+</html>

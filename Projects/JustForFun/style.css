@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    background-color: #bedcfa;
+    
+    text-align: center;
+}
+
+
+span {
+    color: #6783f1;
+}
+
+h1, h2 {
+    color:#6783f1;
+}
+
+
+p {
+    line-height: 1.5;
+}
+
+
+.TopCloud{
+    position: absolute;
+    width: 20%;
+    top: 50px;
+    left: 430px;
+}
+
+
+.TopSection{
+    height: 100vh;
+    position: relative;
+    
+}
+
+
+
+
+.Intro {
+    display: inline-block;
+    font-family: 'Sacramento', cursive;
+    font-size: 3.5rem;
+    margin-top: 150px;
+}
+
+
+.TopSection p{
+    font-family: 'Merriweather', serif;
+    font-size: 23px;
+
+}
+
+
+.BottomCloud {
+    position: absolute;
+    width: 20%;
+    right: 550px;
+
+}
+
+
+.Mountain {
+    width: 50%;
+    margin-top: 200px;
+}
+
+
+.Profile h1 {
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.ProfileImage {
+    width: 12.5%;
+    border-radius: 150px;
+}
+
+
+.Profile p {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    width: 30%;
+    margin: auto;
+}
+
+
+.SkillSection {
+    margin-top: 50px;
+    width: 50%;
+    margin: 50px auto;
+}
+
+
+.SkillSection h1 {
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+
+.WebDevelopmentSection {
+    margin: auto;
+}
+
+.CodeGif {
+    float: left;
+    border-radius:  17px;
+    width: 15%;
+
+}
+
+
+.WebDevelopmentSection h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    margin-left: 150px;
+
+
+}
+
+
+.WebDevelopmentSection p {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.5;
+    margin-left: 150px;
+}
+
+
+.DesignSection {
+    margin-top: 50px;
+}
+
+
+.DesignImage {
+    width: 20%;
+    float: right;
+}
+
+
+.DesignSection h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+
+.DesignSection p {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    text-align: left;
+}
+
+
+.ContactSection {
+    width: 100%;
+}
+
+
+.ContactSection h1 {
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.ContactSection h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 25px;
+}
+
+
+.ContactSection p {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 30px;
+}
+
+
+.ContactSection button {
+    border: none;
+    font-size: 18px;
+    padding: 10px 30px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #98acf8;
+    outline: none;
+    font-weight: bold;
+}
+
+
+footer {
+    display: block;
+    background-color:   #da9ff9;;
+}
+
+
+footer ul {
+    display: block;
+
+}
+
+
+footer ul li {
+    display: inline-block;
+    margin: 50px 10px;
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+}
+
+footer ul li a {
+    color: black;
+    font-weight: bold;
+}
